@@ -1,0 +1,351 @@
+/*--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*--------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+.banner {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: #3475CA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: .25;
+}
+.banner .content {
+	position: relative;
+	max-width: 750px;
+	text-align: center;
+}
+.banner .content h2 {
+	color: white;
+	font-size: 60px;
+}
+.banner .content p {
+	color: white;
+	font-size: 18px;
+}
+.banner header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+}
+.banner header .logo {
+	color: white;
+	text-decoration: none;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+.banner header .toggle {
+	position: relative;
+	width: 36px;
+	height: 30px;
+	background: url('../img/menu-icon-white.png');
+	background-size: cover;
+	cursor: pointer;
+}
+/*------------------------------------*/
+.about {
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+.about .contentBox {
+	background: #162C3B;
+	padding: 100px;
+	width: 50%;
+}
+.heading {
+	color: white;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+.text {
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+.about .imgBox {
+	position: relative;
+	width: 50%;
+}
+.about .imgBox img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/*------------------------------------*/
+.services {
+	background-color: #12222D;
+	padding: 100px;
+	text-align: center;
+}
+.services .container {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;	
+	margin-top: 60px;
+}
+.services .container .serviceBox {
+	position: relative;
+	background: white;
+	width: 300px;	
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.60);
+}
+.services .container .serviceBox img {
+	max-width: 150px;
+}
+.services .container .serviceBox h2 {
+	font-weight: 500;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+/*------------------------------------*/
+.technology {
+	background: #3F8FFC;
+	width: 100%;
+	padding: 100px;
+	padding-top: 300px;
+	margin-top: -280px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.technology .contentBox {
+	max-width: 700px;
+}
+.technology .imgBox {
+	max-width: 250px;
+}
+.technology .imgBox img {
+	max-width: 100%;
+}
+/*------------------------------------*/
+.client {
+	background: #162C3B;
+	padding: 100px;
+	text-align: center;
+}
+.client .imgBox {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.client .imgBox img {
+	max-width: 150px;
+	margin: 20px;
+	margin-bottom: 0;
+	opacity: .25;
+	cursor: pointer;
+	filter: invert(100%);
+}
+.client .imgBox img:hover {
+	opacity: 1;
+}
+/*------------------------------------*/
+.testimonials {
+	position: relative;
+	padding: 100px;
+	background: #12222D;
+	text-align: center;
+}
+.testimonials .container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 40px;
+	flex-wrap: wrap;
+}
+.testimonials .container .contentBox {
+	background: white;
+	padding: 60px 50px;
+	width: 550px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: left;
+}
+.testimonials .container .contentBox p {
+	font-style: italic;
+}
+.testimonials .container .contentBox h3 {
+	width: 100%;
+	text-align: end;
+	color: #3F8FFC;
+}
+/*------------------------------------*/
+.contact {
+	padding: 100px;
+	background: #162C3B;
+	text-align: center;
+}
+/*------------------------------------*/
+.imgBox2 {
+	background: url("../img/ice-cream.jpg");
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+}
+.redBg {
+	background: url("../img/red.jpg") !important;
+	background-size: cover;
+	background-position: center;
+}
+.form .inputBox {
+	margin-bottom: 40px;
+}
+.form .inputBox input {
+	width: 100%;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	padding: 10px 0;
+	font-size: 18px;
+	font-weight: 300;
+	color: white;
+	border-bottom: 2px solid white;
+}
+.form .inputBox input::placeholder {
+	color: white;
+}
+.form .inputBox textarea {
+	width: 100%;
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	padding: 10px 0;
+	font-size: 18px;
+	min-height: 150px;
+	font-weight: 300;
+	color: white;
+	border-bottom: 2px solid white;
+	resize: none;
+}
+.form .inputBox textarea::placeholder {
+	color: white;
+}
+.form .inputBox input[type="submit"] {
+	width: 150px;
+	background: white;
+	color: #111;
+	cursor: pointer;
+	font-weight: 400;
+}
+/*------------------------------------*/
+.copyrightText {
+	padding: 8px 40px;
+	border-top: 1px solid rgba(0, 0, 0, .1);
+	text-align: center;
+}
+.copyrightText p {
+	color: #333;
+}
+.copyrightText span {
+	color: #FF0157;
+	font-weight: 500;
+}
+/*------------------------------------*/
+@media (max-width: 991px) {
+	.banner {
+		padding: 50px;
+	}
+	.banner header {
+		padding: 20px 30px;
+	}
+	.banner .content h2 {
+		font-size: 36px;
+	}
+	.banner .content p {
+		font-size: 16px;
+	}
+	.about {
+		flex-direction: column;
+	}
+	.about .contentBox,
+	.about .imgBox {
+		width: 100%;
+		padding: 50px;
+		min-height: 400px;
+		text-align: center;
+	}
+	.services {
+		padding: 50px;
+	}
+	.services .container {
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.services .container .serviceBox {
+		margin: 20px;
+		width: 300px;
+		height: 350px;
+	}
+	.technology {
+		padding: 50px;
+		padding-top: 300px;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.technology .imgBox {
+		margin-top: 40px;
+		max-width: 250px;
+	}
+	.client {
+		padding: 50px;
+	}
+	.client .imgBox {
+		justify-content: center;
+	}
+	.testimonials {
+		padding: 50px;
+	}
+	.testimonials .contentBox {
+		padding: 60px 40px;
+		max-width: 550px;
+		margin-bottom: 40px;
+	}
+	.testimonials .contentBox:last-child {
+		margin-bottom: 0px;
+	}
+	.contact {
+		padding: 50px;
+	}
+}
